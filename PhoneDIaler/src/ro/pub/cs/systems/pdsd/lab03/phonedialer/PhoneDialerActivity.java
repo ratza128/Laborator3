@@ -31,12 +31,14 @@ public class PhoneDialerActivity extends Activity {
     			numar.setText(numar.getText().toString()+button.getText().toString());			
 			}
         });
+         
+        
         apel=(ImageButton)findViewById(R.id.tasta_rasp);
         apel.setOnClickListener(new OnClickListener(){
     		@Override
 			public void onClick(View arg0) {
     			Intent intent = new Intent(Intent.ACTION_CALL);
-    			intent.setData(Uri.parse("tel:"+numar));
+    			intent.setData(Uri.parse("tel:"+numar.getText().toString()));
     			startActivity(intent);
 			}
         });
