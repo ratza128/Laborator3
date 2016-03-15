@@ -31,7 +31,7 @@
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:columnCount="3"
+            android:columnCount="4"
             android:onClick="onTasta" >
 
             <Button
@@ -40,32 +40,42 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:layout_row="1"
-                android:text="1" 
-                android:onClick="onTasta"/>
-
-            <Button
-                android:id="@+id/tasta2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:text="2" 
-                android:onClick="onTasta"/>
+                android:onClick="onTasta"
+                android:text="1" />
 
             <Button
                 android:id="@+id/tasta3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
-                android:text="3" 
-                android:onClick="onTasta"/>
+                android:onClick="onTasta"
+                android:text="3" />
 
             <ImageButton
                 android:id="@+id/tasta_stergere"
                 android:layout_width="84dp"
-                android:layout_column="2"
+                android:layout_column="3"
                 android:layout_gravity="left|top"
                 android:layout_row="0"
                 android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+            <Button
+                android:id="@+id/button_contactmanager"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="left|top"
+                android:layout_row="0"
+                android:text="ContactsMan" />
+
+            <Button
+                android:id="@+id/tasta2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="right|top"
+                android:layout_row="1"
+                android:onClick="onTasta"
+                android:text="2" />
 
         </GridLayout>
 
